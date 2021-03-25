@@ -1,0 +1,12 @@
+{% extends '_base.html' %}
+{% load render_table from django_tables2 %}
+
+{% block title %}Requests schedule{% endblock %}
+
+{% block content %}
+<h2>Scheduled requests</h2>
+<br>
+{% render_table table %}
+<a href="/admin/scheduler/scheduledrequest/" class="btn btn-secondary" role="button" data-toggle="tooltip" data-placement="bottom" title="Filter request for types and statuses">Admin interface</a>
+<a href="/admin/scheduler/scheduledrequest/add/" class="btn btn-primary active" role="button">Add new</a>
+{% endblock content %}
