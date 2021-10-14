@@ -1,4 +1,4 @@
-# perdoo_scheduler
+# scheduler
 
 This is a simple scheduler application that allows you to schedule and execute
 requests at arbitrary time in the future.
